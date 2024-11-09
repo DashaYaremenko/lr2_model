@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.lr2_model.HelloController">
+        <LineChart fx:id="yChart">
+            <xAxis>
+                <NumberAxis label="Time (t)" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="y(t)" />
+            </yAxis>
+        </LineChart>
+        <LineChart fx:id="yDotChart">
+            <xAxis>
+                <NumberAxis label="Time (t)" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="y'(t)" />
+            </yAxis>
+        </LineChart>
+        <Button fx:id="simulateButton" text="Почати моделювання"  layoutX="100.0"/>
+    </VBox>
